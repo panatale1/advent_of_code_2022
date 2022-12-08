@@ -10,11 +10,9 @@ for line in lines:
     grid.append(newline)
 
 visible_trees = 0
-print(grid[0])
 visible_trees += len(grid[0])
 visible_trees += len(grid[-1])
 visible_trees += 2 * len(grid[1:-1])
-print(visible_trees)
 
 for i in range(1, len(grid) - 1):
     for j in range(1, len(grid[i]) - 1):
